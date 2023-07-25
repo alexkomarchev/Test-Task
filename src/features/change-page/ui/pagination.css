@@ -1,0 +1,45 @@
+.wrap-pg {
+	width: 100%;
+	margin: 15px auto;
+	display: flex;
+	justify-content: center;
+}
+
+li > button {
+	font-weight: 500 !important;
+	font-size: 17px !important;
+	font-style: italic;
+	color: #474955;
+}
+
+li:first-child {
+	margin-right: 100px;
+}
+
+li:last-child {
+	margin-left: 100px;
+}
+
+li > button.Mui-selected {
+	color: #7ebc3c;
+	background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+	li:last-child {
+		display: none;
+		margin-left: 0px;
+	}
+
+	li:first-child {
+		display: none;
+		margin-right: 0px;
+	}
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	color: #474955;
+	cursor: pointer;
+}
