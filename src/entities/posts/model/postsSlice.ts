@@ -75,9 +75,9 @@ export const postsSlice = createSlice({
 				return
 			}
 
-			const request = action.payload
+			const request = action.payload.toLowerCase()
 
-			const searchFn = (el: Post) => el.title.includes(request) || el.body.includes(request) || el.id.toString().includes(request)
+			const searchFn = (el: Post) => el.title.toLowerCase().includes(request) || el.body.toLowerCase().includes(request) || el.id.toString().includes(request)
 
 			const searchingPosts = state.posts.filter(searchFn)
 
